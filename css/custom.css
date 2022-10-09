@@ -1,0 +1,43 @@
+.risultato span{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-right: .7em;
+}
+
+.number {
+    color: blue;
+    font-weight: bold;
+    font-size: .8em;
+    margin-left: -21px;
+}
+
+.start-button{
+    margin-top: -60px;
+    margin-right: 65px;
+}
+
+.focus:hover{
+    cursor: pointer;
+}
+
+.top-8{
+    margin-top: 8rem;
+}
+
+.left-4{
+    margin-left: 4rem;
+}
+
+.azione{
+    padding-top: 6px;
+    font-size: 1.4rem;
+}
+
+.doppia-bandiera{
+    margin-right: 10px;
+}
+
+.spazio-maglietta{
+    margin-right: 20px;
+}

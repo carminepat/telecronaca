@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard telecronista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="d-block mx-auto mb-4" src="images/football.png" width="40"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarBasic">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dashboard telecronista</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-4">
+        <di class="row">
+            <div class="col col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col col-md-8">
+                        <h2>Italia - Francia</h2>
+                        <p>9 luglio 2006</p>
+                        <img class="float-end start-button focus" src="images/start.png" height="35px" onclick="sendAzione('start')"/>
+                    </div>
+                    <div class="col col-md-4 text-end risultato">
+                        <img src="images/italy.png" height="40px">
+                        <span id="result-italy" data-rs-italy="0">0</span>
+                        <span>-</span>
+                        <img src="images/france.png" height="40px">
+                        <span id="result-france" data-rs-france="0">0</span>
+                    </div>
+                </div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Italia</td>
+                            <td>Francia</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table">
+                                    <theader>
+                                        <tr>
+                                            <th>N</th>
+                                            <th>Giocatore</th>
+                                            <th>#</th>
+                                        </tr>
+                                    </theader>
+                                    <tbody id="tbitalia">
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="table">
+                                    <theader>
+                                        <tr>
+                                            <th>N</th>
+                                            <th>Giocatore</th>
+                                            <th>#</th>
+                                        </tr>
+                                    </theader>
+                                    <tbody id="tbfrancia">
+                                        
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col top-8 left-4" id="eventi">
+
+            </div>
+        </di>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@10.1.0"></script>
+    <script src="telecronista.js"></script>
+    <script>
+        getSquadra("Italia", "tbitalia");
+        getSquadra("Francia", "tbfrancia");
+        aggiornaRealTime();
+    </script>
+</body>
+</html>
