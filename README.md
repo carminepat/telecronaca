@@ -22,7 +22,8 @@ Creazione del database, collection ed attributi:
 - lanciare il comando: `node index.js help` per consultare le funzionalità a disposizione
 - lanciare i comandi 1, 2, 3 con `node index.js create`
 
-Per testare l'applicazione con le funzionalità di realtime (telecronista, tifoso) configurare all'interno dei file *telecronista.js e tifoso.js*: 
+Per testare l'applicazione con le funzionalità di realtime (telecronista, tifoso) configurare all'interno dei file *telecronista.js e tifoso.js*: il projectID, e gli id del database e delle collection
+ 
 ```
 ├── css
 │   └── custom.css
@@ -39,3 +40,8 @@ Per testare l'applicazione con le funzionalità di realtime (telecronista, tifos
 ├── tifoso.html
 └── tifoso.js
 ```
+
+## Riferimenti:
+[https://appwrite.io](url)
+
+[https://30days.appwrite.io/](url)
