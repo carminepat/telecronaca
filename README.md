@@ -1,6 +1,5 @@
 ## Progetto di esempio presentato al Come to Code 2022
-Applicazione web realizzata con SDK appwrite, per dimostrazione della funzionalità "realtime"
-
+Applicazione web realizzata con SDK appwrite per il web, per simulare le funzionalita offerte per il "realtime". L'applicazione
 Requirements:
 - 	 installazione Docker
 - 	 installazione di NodeJs
