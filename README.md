@@ -1,5 +1,6 @@
 ## Progetto di esempio presentato al Come to Code 2022
-Applicazione web realizzata con SDK appwrite per il web, per simulare le funzionalita offerte per il "realtime". L'applicazione
+Applicazione web realizzata con SDK appwrite per il web, per simulare le funzionalita offerte per il "realtime". L'applicazione simula la telecronaca di una partita, permettendo di indicare le azioni compiute dai giocatori ed aggiornandole in real-time sulla pagina del tifoso.
+
 Requirements:
 - 	 installazione Docker
 - 	 installazione di NodeJs
